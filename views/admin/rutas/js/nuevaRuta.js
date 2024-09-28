@@ -59,7 +59,7 @@ function trazarRuta() {
         var origen = markerOrigen.getLatLng()
         var destino = markerDestino.getLatLng()
 
-        var url = `http://router.project-osrm.org/route/v1/driving/${origen.lng},${origen.lat};${destino.lng},${destino.lat}?overview=full`
+        var url = `https://router.project-osrm.org/route/v1/driving/${origen.lng},${origen.lat};${destino.lng},${destino.lat}?overview=full`
 
         fetch(url)
         .then(response => response.json())
